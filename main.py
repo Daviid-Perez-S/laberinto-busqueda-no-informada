@@ -194,13 +194,13 @@ def configurar_tablero(size):
 			for c in range(len(tablero[0])):
 				b = tablero[r][c]
 				if ( tablero[r][c] > 0 ):
-					Button(pantalla_tablero, text = str(b), borderwidth = 1, height = 5, width = 10, bg = COLOR_LIBRE ).grid(row = r, column = c)
+					Button(pantalla_tablero, text = str(b), fg = "blue", borderwidth = 1, height = 5, width = 10, bg = COLOR_LIBRE ).grid(row = r, column = c)
 				elif ( tablero[r][c] == 0 ):
-					Button(pantalla_tablero, text = str(b), borderwidth = 1, height = 5, width = 10, bg = COLOR_INICIO ).grid(row = r, column = c)
+					Button(pantalla_tablero, text = str(b), fg = "green", borderwidth = 1, height = 5, width = 10, bg = COLOR_INICIO ).grid(row = r, column = c)
 				elif ( tablero[r][c] == -1 ):
-					Button(pantalla_tablero, text = str(b), borderwidth = 1, height = 5, width = 10, bg = COLOR_OBSTACULO ).grid(row = r, column = c)
+					Button(pantalla_tablero, text = str(b), fg = "grey", borderwidth = 1, height = 5, width = 10, bg = COLOR_OBSTACULO ).grid(row = r, column = c)
 				elif (tablero[r][c] == -100 ):
-					Button(pantalla_tablero, text = str(b), borderwidth = 1, height = 5, width = 10, bg = COLOR_SALIDA ).grid(row = r, column = c)
+					Button(pantalla_tablero, text = str(b), fg = "red", borderwidth = 1, height = 5, width = 10, bg = COLOR_SALIDA ).grid(row = r, column = c)
 
 		# Button(pantalla_tablero, command = lambda: ingresar_numero_casilla(pantalla_tablero, "libre", tablero), text = "Sel. casilla libre", borderwidth = 1, height = 3, width = 20 ).grid(row = 0, column = len(tablero) + 2)
 		Button(pantalla_tablero, command = lambda: ingresar_numero_casilla(pantalla_tablero, "obstaculo", tablero), text = "Sel. obstáculo", fg = "grey", borderwidth = 1, height = 3, width = 20 ).grid(row = 0, column = len(tablero) + 2)

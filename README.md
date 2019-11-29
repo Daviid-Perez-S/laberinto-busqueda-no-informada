@@ -73,7 +73,7 @@ Eso debería funcionar... sino pues ya fue, ya ni le continues al resto de este 
 ## Ejecutar el programa
 
 ```bash
-python arbol.py
+python main.py
 ```
 
 Generará una imagen llamada "arbol.png" en el directorio raíz.

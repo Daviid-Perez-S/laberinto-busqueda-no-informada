@@ -41,11 +41,28 @@ Para instalar las dependencias del proyecto ejecuta el siguiente comando:
 pip3 install -r requirements.txt
 ```
 
-NOTA: Si le instalas otras dependencias al proyecto, no te olvides de guardarlas en el archivo de requerimientos :D ---> (requirements.txt). Usa el comando:
+NOTA 1: Si le instalas otras dependencias al proyecto, no te olvides de guardarlas en el archivo de requerimientos :D ---> (requirements.txt). Usa el comando:
 
 ```bash
 pip3 freeze > requirements.txt
 ```
+
+## Instalar pygraphviz
+
+Como esta dependecia es algo *especial*, hagamos lo siguiente.
+Instala pygraphviz con el siguiente comando:
+
+```bash
+pip3 install pygraphviz
+```
+
+Si te da un error al instalarlo, instalalo mejor usando mejor apt:
+
+```bash
+sudo apt install graphviz
+```
+
+Eso debería funcionar... sino pues ya fue, ya ni le continues al resto de este README  :v
 
 ## Ejecutar el programa
 

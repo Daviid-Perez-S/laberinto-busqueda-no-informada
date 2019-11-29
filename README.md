@@ -56,10 +56,16 @@ Instala pygraphviz con el siguiente comando:
 pip3 install pygraphviz
 ```
 
+Para los usuarios de MacOS deben realizar la instalación de pygraphviz con el siguiente comando:
+
+```bash
+pip install --install-option="--include-path=/usr/local/include/" --install-option="--library-path=/usr/local/lib/" pygraphviz
+```
+
 Si te da un error al instalarlo, instalalo mejor usando mejor apt:
 
 ```bash
-sudo apt install graphviz
+sudo apt install graphviz # Solo para Linux
 ```
 
 Eso debería funcionar... sino pues ya fue, ya ni le continues al resto de este README  :v
